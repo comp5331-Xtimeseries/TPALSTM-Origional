@@ -40,6 +40,7 @@ def train(para, sess, model, train_data_generator):
             valid_sess.run(valid_data_generator.iterator.initializer)
             valid_loss = 0.0
             valid_rse = 0.0
+            valid_rae = 0.0
             count = 0
             n_samples = 0
             all_outputs, all_labels = [], []
@@ -54,6 +55,8 @@ def train(para, sess, model, train_data_generator):
                         valid_rse += np.sum(
                             ((outputs - labels) * valid_data_generator.scale)
                             **2)
+                        valid_rae += np.sum(
+                            (abs(outputs - labels) * valid_data_generator.scale))
                         all_outputs.append(outputs)
                         all_labels.append(labels)
                         n_samples += np.prod(outputs.shape)
@@ -73,11 +76,11 @@ def train(para, sess, model, train_data_generator):
                               (all_labels - mean_labels)).mean(
                                   axis=0) / (sigma_outputs * sigma_labels)
                 valid_corr = valid_corr[idx].mean()
-                valid_rse = (
-                    np.sqrt(valid_rse / n_samples) / train_data_generator.rse)
+                valid_rse = (np.sqrt(valid_rse / n_samples) / train_data_generator.rse)
+                valid_rae = ((valid_rae / n_samples) / train_data_generator.rae)
                 valid_loss /= count
                 logging.info(
-                    "validation loss: %.5f, validation rse: %.5f, validation corr: %.5f",
-                    valid_loss, valid_rse, valid_corr)
+                    "validation loss: %.5f, validation rse: %.5f, validation rae: %.5f, validation corr: %.5f",
+                    valid_loss, valid_rse, valid_rae, valid_corr)
             else:
                 logging.info("validation loss: %.5f", valid_loss / count)

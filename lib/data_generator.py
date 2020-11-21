@@ -318,6 +318,7 @@ class TimeSeriesDataGenerator(DataGenerator):
         self.raw_dat = np.loadtxt(self.out_fn, delimiter=",")
         para.input_size = self.INPUT_SIZE = self.raw_dat.shape[1]
         self.rse = self._compute_rse()
+        self.rae = self._compute_rae()
 
         para.max_len = self.MAX_LEN = self.para.highway
         assert self.para.highway == self.para.attention_len
@@ -344,6 +345,14 @@ class TimeSeriesDataGenerator(DataGenerator):
         for target in range(st, ed):
             Y[target - st] = self.raw_dat[target]
         return np.std(Y)
+
+    def _compute_rae(self):
+        st = int(self.raw_dat.shape[0] * self.split[2])
+        ed = int(self.raw_dat.shape[0] * self.split[3])
+        Y = np.zeros((ed - st, self.INPUT_SIZE))
+        for target in range(st, ed):
+            Y[target - st] = abs(self.raw_dat[target])
+        return np.sum(Y)
 
     def _convert_to_tfrecords(self, st, ed, name):
         st = int(self.dat.shape[0] * st)

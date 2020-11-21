@@ -23,6 +23,7 @@ def test(para, sess, model, data_generator):
                 test_rse += np.sum(
                     ((outputs - labels) * data_generator.scale) ** 2
                 )
+                test_rae += np.sum(abs(outputs - labels) * valid_data_generator.scale)
                 all_outputs.append(outputs)
                 all_labels.append(labels)
             elif para.data_set == 'muse' or para.data_set == 'lpd5':
@@ -55,7 +56,8 @@ def test(para, sess, model, data_generator):
         test_rse = (
             np.sqrt(test_rse / n_samples) / data_generator.rse
         )
-        logging.info("test rse: %.5f, test corr: %.5f" % (test_rse, test_corr))
+        test_rae = ((valid_rae / n_samples) / data_generator.rae)
+        logging.info("test rse: %.5f, test_rae: %.5f, test corr: %.5f" % (test_rse, test_rae, test_corr))
     else:
         precision = tp / (tp + fp)
         recall = tp / (tp + fn)
