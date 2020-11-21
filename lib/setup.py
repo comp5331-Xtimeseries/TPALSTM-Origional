@@ -25,6 +25,7 @@ def params_setup():
     parser.add_argument('--num_epochs', type=int, default=40)
     parser.add_argument('--num_layers', type=int, default=3)
     parser.add_argument('--num_units', type=int, default=338)
+    parser.add_argument('--save_name', type=str, default="")
 
     para = parser.parse_args()
 
