@@ -23,8 +23,7 @@ def train(para, sess, model, train_data_generator):
             count = 0
             while True:
                 try:
-                    [loss, global_step, _] = sess.run(
-                        fetches=[model.loss, model.global_step, model.update])
+                    [loss, global_step, _] = sess.run(fetches=[model.loss, model.global_step, model.update])
                     train_loss += loss
                     count += 1
                 except tf.errors.OutOfRangeError:
