@@ -13,7 +13,7 @@ def train(para, sess, model, train_data_generator):
 
     with tf.Session(config=config_setup(), graph=valid_graph) as valid_sess:
         valid_sess.run(tf.global_variables_initializer())
-
+        minLoss = np.inf
         for epoch in range(1, para.num_epochs + 1):
             logging.info("Epoch: %d" % epoch)
             sess.run(train_data_generator.iterator.initializer)
@@ -81,5 +81,9 @@ def train(para, sess, model, train_data_generator):
                 logging.info(
                     "validation loss: %.5f, validation rse: %.5f, validation rae: %.5f, validation corr: %.5f",
                     valid_loss, valid_rse, valid_rae, valid_corr)
+
+                if valid_loss < minLoss:
+                    save_model(para, sess, model)
+                    minLoss = valid_loss
             else:
                 logging.info("validation loss: %.5f", valid_loss / count)

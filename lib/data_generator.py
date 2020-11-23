@@ -351,7 +351,10 @@ class TimeSeriesDataGenerator(DataGenerator):
         ed = int(self.raw_dat.shape[0] * self.split[3])
         Y = np.zeros((ed - st, self.INPUT_SIZE))
         for target in range(st, ed):
-            Y[target - st] = abs(self.raw_dat[target])
+            Y[target - st] = self.raw_dat[target]
+        Ymean = np.mean(Y)
+        for target in range(st, ed):
+            Y[target - st] = abs(self.raw_dat[target] - Ymean)
         return np.sum(Y)
 
     def _convert_to_tfrecords(self, st, ed, name):
