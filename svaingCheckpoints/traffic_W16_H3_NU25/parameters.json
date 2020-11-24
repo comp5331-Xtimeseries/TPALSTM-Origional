@@ -1,0 +1,20 @@
+{
+    "attention_len": 17,
+    "batch_size": 32,
+    "data_set": "traffic",
+    "decay": 0,
+    "dropout": 0.2,
+    "file_output": 1,
+    "highway": 17,
+    "horizon": 3,
+    "init_weight": 0.1,
+    "learning_rate": 0.001,
+    "max_gradient_norm": 5.0,
+    "mode": "train",
+    "model_dir": "./models/traffic",
+    "mts": 1,
+    "num_epochs": 40,
+    "num_layers": 3,
+    "num_units": 25,
+    "logging_level": 20
+}

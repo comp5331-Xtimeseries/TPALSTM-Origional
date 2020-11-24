@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ATTEN=16
+ATTEN=17
 HORIZON=3
 HORIZON_ELEC=3
 BASHSIZE=32
@@ -9,20 +9,20 @@ NUMUNIT=25
 LEARNINGRATE=1e-3
 #Traffic train
 
-python3 main.py --mode train  --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON --data_set traffic --batch_size $BASHSIZE     --mts 1     --dropout 0.2     --learning_rate $LEARNINGRATE     --model_dir ./models/traffic     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee trafficTrainLog.txt
+python3.6 main.py --mode train  --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON --data_set traffic --batch_size $BASHSIZE     --mts 1     --dropout 0.2     --learning_rate $LEARNINGRATE     --model_dir ./models/traffic     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee trafficTrainLog.txt
 
 
 #ExchangeRate train
 
-#python3 main.py --mode train --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON --data_set exchange_rate --batch_size $BASHSIZE      --mts 1    --dropout 0.2     --learning_rate 3e-3     --model_dir ./models/exchange_rate     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee exchangeRateTrainLog.txt
+#python3.6 main.py --mode train --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON --data_set exchange_rate --batch_size $BASHSIZE      --mts 1    --dropout 0.2     --learning_rate 3e-3     --model_dir ./models/exchange_rate     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee exchangeRateTrainLog.txt
 
 
 #Electricity train
 
-#python3 main.py --mode train --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON_ELEC --data_set electricity --batch_size $BASHSIZE     --mts 1     --dropout 0.2     --learning_rate $LEARNINGRATE     --model_dir ./models/electricity     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee electricityTrainLog.txt
+#python3.6 main.py --mode train --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON_ELEC --data_set electricity --batch_size $BASHSIZE     --mts 1     --dropout 0.2     --learning_rate $LEARNINGRATE     --model_dir ./models/electricity     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee electricityTrainLog.txt
 
 
 #Solar train
 
-#python3 main.py --mode train --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON --data_set solar --batch_size $BASHSIZE   --mts 1       --dropout 0.2     --learning_rate $LEARNINGRATE     --model_dir ./models/solar     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee solarTrainLog.txt
+#python3.6 main.py --mode train --attention_len $ATTEN --highway $ATTEN --horizon $HORIZON --data_set solar --batch_size $BASHSIZE   --mts 1       --dropout 0.2     --learning_rate $LEARNINGRATE     --model_dir ./models/solar     --num_epochs $EPOCHS     --num_layers 3     --num_units $NUMUNIT 2>&1 | tee solarTrainLog.txt
 

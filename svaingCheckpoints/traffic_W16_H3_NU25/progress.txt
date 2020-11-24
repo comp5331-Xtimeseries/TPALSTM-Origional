@@ -1,0 +1,204 @@
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/train.tfrecords
+INFO     - Loading model with fresh parameters
+INFO     - # of trainable parameters: 6071060
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/validation.tfrecords
+INFO     - Epoch: 1
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/train.tfrecords
+INFO     - Loading model with fresh parameters
+INFO     - # of trainable parameters: 122808
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/validation.tfrecords
+INFO     - Epoch: 1
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/train.tfrecords
+INFO     - Loading model with fresh parameters
+INFO     - # of trainable parameters: 123487
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/validation.tfrecords
+INFO     - Epoch: 1
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/train.tfrecords
+INFO     - Loading model with fresh parameters
+INFO     - # of trainable parameters: 122711
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/validation.tfrecords
+INFO     - Epoch: 1
+INFO     - global step: 329, loss: 0.02670, epoch time: 62.020
+INFO     - Loading model from ./models/traffic/model.ckpt-329
+INFO     - validation loss: 0.02466, validation rse: 0.62255, validation rae: 0.47091, validation corr: 0.79345
+INFO     - Epoch: 2
+INFO     - global step: 658, loss: 0.01927, epoch time: 42.260
+INFO     - Loading model from ./models/traffic/model.ckpt-658
+INFO     - validation loss: 0.01990, validation rse: 0.53701, validation rae: 0.38009, validation corr: 0.83249
+INFO     - Epoch: 3
+INFO     - global step: 987, loss: 0.01722, epoch time: 37.533
+INFO     - Loading model from ./models/traffic/model.ckpt-987
+INFO     - validation loss: 0.02006, validation rse: 0.53405, validation rae: 0.38292, validation corr: 0.83479
+INFO     - Epoch: 4
+INFO     - global step: 1316, loss: 0.01631, epoch time: 42.135
+INFO     - Loading model from ./models/traffic/model.ckpt-1316
+INFO     - validation loss: 0.01902, validation rse: 0.51049, validation rae: 0.36318, validation corr: 0.84422
+INFO     - Epoch: 5
+INFO     - global step: 1645, loss: 0.01582, epoch time: 42.830
+INFO     - Loading model from ./models/traffic/model.ckpt-1645
+INFO     - validation loss: 0.01873, validation rse: 0.50511, validation rae: 0.35749, validation corr: 0.84601
+INFO     - Epoch: 6
+INFO     - global step: 1974, loss: 0.01530, epoch time: 43.421
+INFO     - Loading model from ./models/traffic/model.ckpt-1974
+INFO     - validation loss: 0.01840, validation rse: 0.50029, validation rae: 0.35109, validation corr: 0.84944
+INFO     - Epoch: 7
+INFO     - global step: 2303, loss: 0.01502, epoch time: 46.849
+INFO     - Loading model from ./models/traffic/model.ckpt-2303
+INFO     - validation loss: 0.01777, validation rse: 0.49112, validation rae: 0.33923, validation corr: 0.85442
+INFO     - Epoch: 8
+INFO     - global step: 2632, loss: 0.01457, epoch time: 42.973
+INFO     - Loading model from ./models/traffic/model.ckpt-2632
+INFO     - validation loss: 0.01722, validation rse: 0.48641, validation rae: 0.32873, validation corr: 0.85787
+INFO     - Epoch: 9
+INFO     - global step: 2961, loss: 0.01437, epoch time: 38.885
+INFO     - Loading model from ./models/traffic/model.ckpt-2961
+INFO     - validation loss: 0.01737, validation rse: 0.48923, validation rae: 0.33154, validation corr: 0.85755
+INFO     - Epoch: 10
+INFO     - global step: 3290, loss: 0.01412, epoch time: 45.604
+INFO     - Loading model from ./models/traffic/model.ckpt-3290
+INFO     - validation loss: 0.01792, validation rse: 0.49893, validation rae: 0.34213, validation corr: 0.85520
+INFO     - Epoch: 11
+INFO     - global step: 3619, loss: 0.01403, epoch time: 42.136
+INFO     - Loading model from ./models/traffic/model.ckpt-3619
+INFO     - validation loss: 0.01713, validation rse: 0.48723, validation rae: 0.32706, validation corr: 0.85883
+INFO     - Epoch: 12
+INFO     - global step: 3948, loss: 0.01395, epoch time: 38.998
+INFO     - Loading model from ./models/traffic/model.ckpt-3948
+INFO     - validation loss: 0.01745, validation rse: 0.49046, validation rae: 0.33310, validation corr: 0.85709
+INFO     - Epoch: 13
+INFO     - global step: 4277, loss: 0.01372, epoch time: 44.325
+INFO     - Loading model from ./models/traffic/model.ckpt-4277
+INFO     - validation loss: 0.01675, validation rse: 0.48215, validation rae: 0.31975, validation corr: 0.86169
+INFO     - Epoch: 14
+INFO     - global step: 4606, loss: 0.01361, epoch time: 39.310
+INFO     - Loading model from ./models/traffic/model.ckpt-4606
+INFO     - validation loss: 0.01756, validation rse: 0.49535, validation rae: 0.33513, validation corr: 0.85726
+INFO     - Epoch: 15
+INFO     - global step: 4935, loss: 0.01365, epoch time: 41.232
+INFO     - Loading model from ./models/traffic/model.ckpt-4935
+INFO     - validation loss: 0.01688, validation rse: 0.48223, validation rae: 0.32228, validation corr: 0.86102
+INFO     - Epoch: 16
+INFO     - global step: 5264, loss: 0.01346, epoch time: 42.047
+INFO     - Loading model from ./models/traffic/model.ckpt-5264
+INFO     - validation loss: 0.01702, validation rse: 0.48556, validation rae: 0.32503, validation corr: 0.86010
+INFO     - Epoch: 17
+INFO     - global step: 5593, loss: 0.01337, epoch time: 40.340
+INFO     - Loading model from ./models/traffic/model.ckpt-5593
+INFO     - validation loss: 0.01670, validation rse: 0.48017, validation rae: 0.31886, validation corr: 0.86194
+INFO     - Epoch: 18
+INFO     - global step: 5922, loss: 0.01339, epoch time: 42.060
+INFO     - Loading model from ./models/traffic/model.ckpt-5922
+INFO     - validation loss: 0.01719, validation rse: 0.48646, validation rae: 0.32808, validation corr: 0.86062
+INFO     - Epoch: 19
+INFO     - global step: 6251, loss: 0.01322, epoch time: 43.401
+INFO     - Loading model from ./models/traffic/model.ckpt-6251
+INFO     - validation loss: 0.01698, validation rse: 0.48711, validation rae: 0.32440, validation corr: 0.86067
+INFO     - Epoch: 20
+INFO     - global step: 6580, loss: 0.01330, epoch time: 39.955
+INFO     - Loading model from ./models/traffic/model.ckpt-6580
+INFO     - validation loss: 0.01677, validation rse: 0.48202, validation rae: 0.32039, validation corr: 0.86084
+INFO     - Epoch: 21
+INFO     - global step: 6909, loss: 0.01308, epoch time: 40.674
+INFO     - Loading model from ./models/traffic/model.ckpt-6909
+INFO     - validation loss: 0.01709, validation rse: 0.48307, validation rae: 0.32630, validation corr: 0.86036
+INFO     - Epoch: 22
+INFO     - global step: 7238, loss: 0.01308, epoch time: 41.006
+INFO     - Loading model from ./models/traffic/model.ckpt-7238
+INFO     - validation loss: 0.01666, validation rse: 0.48062, validation rae: 0.31801, validation corr: 0.86429
+INFO     - Epoch: 23
+INFO     - global step: 7567, loss: 0.01306, epoch time: 40.713
+INFO     - Loading model from ./models/traffic/model.ckpt-7567
+INFO     - validation loss: 0.01667, validation rse: 0.48124, validation rae: 0.31812, validation corr: 0.86189
+INFO     - Epoch: 24
+INFO     - global step: 7896, loss: 0.01300, epoch time: 43.380
+INFO     - Loading model from ./models/traffic/model.ckpt-7896
+INFO     - validation loss: 0.01670, validation rse: 0.48375, validation rae: 0.31906, validation corr: 0.86100
+INFO     - Epoch: 25
+INFO     - global step: 8225, loss: 0.01297, epoch time: 40.276
+INFO     - Loading model from ./models/traffic/model.ckpt-8225
+INFO     - validation loss: 0.01672, validation rse: 0.47801, validation rae: 0.31923, validation corr: 0.86367
+INFO     - Epoch: 26
+INFO     - global step: 8554, loss: 0.01289, epoch time: 43.989
+INFO     - Loading model from ./models/traffic/model.ckpt-8554
+INFO     - validation loss: 0.01754, validation rse: 0.48890, validation rae: 0.33504, validation corr: 0.85981
+INFO     - Epoch: 27
+INFO     - global step: 8883, loss: 0.01297, epoch time: 44.629
+INFO     - Loading model from ./models/traffic/model.ckpt-8883
+INFO     - validation loss: 0.01655, validation rse: 0.47492, validation rae: 0.31611, validation corr: 0.86367
+INFO     - Epoch: 28
+INFO     - global step: 9212, loss: 0.01289, epoch time: 41.740
+INFO     - Loading model from ./models/traffic/model.ckpt-9212
+INFO     - validation loss: 0.01660, validation rse: 0.47887, validation rae: 0.31691, validation corr: 0.86570
+INFO     - Epoch: 29
+INFO     - global step: 9541, loss: 0.01277, epoch time: 43.722
+INFO     - Loading model from ./models/traffic/model.ckpt-9541
+INFO     - validation loss: 0.01672, validation rse: 0.48352, validation rae: 0.31936, validation corr: 0.86160
+INFO     - Epoch: 30
+INFO     - global step: 9870, loss: 0.01278, epoch time: 44.420
+INFO     - Loading model from ./models/traffic/model.ckpt-9870
+INFO     - validation loss: 0.01684, validation rse: 0.48192, validation rae: 0.32154, validation corr: 0.86356
+INFO     - Epoch: 31
+INFO     - global step: 10199, loss: 0.01276, epoch time: 44.290
+INFO     - Loading model from ./models/traffic/model.ckpt-10199
+INFO     - validation loss: 0.01701, validation rse: 0.48272, validation rae: 0.32480, validation corr: 0.86093
+INFO     - Epoch: 32
+INFO     - global step: 10528, loss: 0.01273, epoch time: 46.976
+INFO     - Loading model from ./models/traffic/model.ckpt-10528
+INFO     - validation loss: 0.01662, validation rse: 0.47926, validation rae: 0.31730, validation corr: 0.86339
+INFO     - Epoch: 33
+INFO     - global step: 10857, loss: 0.01269, epoch time: 44.345
+INFO     - Loading model from ./models/traffic/model.ckpt-10857
+INFO     - validation loss: 0.01677, validation rse: 0.48051, validation rae: 0.32015, validation corr: 0.86360
+INFO     - Epoch: 34
+INFO     - global step: 11186, loss: 0.01263, epoch time: 41.614
+INFO     - Loading model from ./models/traffic/model.ckpt-11186
+INFO     - validation loss: 0.01725, validation rse: 0.49306, validation rae: 0.32921, validation corr: 0.86127
+INFO     - Epoch: 35
+INFO     - global step: 11515, loss: 0.01266, epoch time: 45.783
+INFO     - Loading model from ./models/traffic/model.ckpt-11515
+INFO     - validation loss: 0.01714, validation rse: 0.49083, validation rae: 0.32728, validation corr: 0.85995
+INFO     - Epoch: 36
+INFO     - global step: 11844, loss: 0.01257, epoch time: 42.155
+INFO     - Loading model from ./models/traffic/model.ckpt-11844
+INFO     - validation loss: 0.01634, validation rse: 0.47742, validation rae: 0.31202, validation corr: 0.86410
+INFO     - Epoch: 37
+INFO     - global step: 12173, loss: 0.01258, epoch time: 43.785
+INFO     - Loading model from ./models/traffic/model.ckpt-12173
+INFO     - validation loss: 0.01669, validation rse: 0.48109, validation rae: 0.31865, validation corr: 0.86374
+INFO     - Epoch: 38
+INFO     - global step: 12502, loss: 0.01253, epoch time: 47.308
+INFO     - Loading model from ./models/traffic/model.ckpt-12502
+INFO     - validation loss: 0.01666, validation rse: 0.48003, validation rae: 0.31806, validation corr: 0.86255
+INFO     - Epoch: 39
+INFO     - global step: 12831, loss: 0.01248, epoch time: 45.903
+INFO     - Loading model from ./models/traffic/model.ckpt-12831
+INFO     - validation loss: 0.01598, validation rse: 0.47158, validation rae: 0.30527, validation corr: 0.86640
+INFO     - Epoch: 40
+INFO     - global step: 13160, loss: 0.01248, epoch time: 40.786
+INFO     - Loading model from ./models/traffic/model.ckpt-13160
+INFO     - validation loss: 0.01666, validation rse: 0.48307, validation rae: 0.31813, validation corr: 0.86154
+INFO     - Downloading Time Series traffic data set...
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/train.tfrecords
+INFO     - Loading model from ./models/traffic/model.ckpt-13160
+INFO     - Downloading Time Series traffic data set...
+INFO     - rse = 0.05709034691389371
+INFO     - Loading data from ./data/traffic3/train.tfrecords
+INFO     - Loading model from ./models/traffic/model.ckpt-13160
