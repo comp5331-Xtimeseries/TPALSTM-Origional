@@ -3,8 +3,8 @@ import tensorflow as tf
 
 from lib.setup import logging_config_setup, config_setup
 from lib.model_utils import create_graph, load_weights, print_num_of_trainable_parameters
-from lib.train import train
-from lib.test_sess import test
+# from lib.train import train
+from lib.train_sess import train
 
 import argparse
 import logging
@@ -34,7 +34,7 @@ def sess_params_setup():
 
     para, unknown = sess_parser.parse_known_args()
     # para = parser.parse_args()
-    para.mode = "test"
+    para.mode = "validation"
     para.mode2 = "explain"
     para.attention_len = para.highway = 16
     para.horizon = 3
@@ -72,32 +72,27 @@ def main():
         print_num_of_trainable_parameters()
 
         try:
-            if para.mode == 'train':
-                train(para, sess, model, data_generator)
-            elif para.mode == 'test':
-                # saver = tf.train.Saver()
-                # saver.save(sess, "./modelsForVis/traffic.h5")
-                # model.saver.save(sess, "./modelsForVis/traffic2/traffic")
-                # model.save('./modelsForVis/traffic')
 
-                if para.mode2 == "explain":
-                    all_inputs, all_labels, all_outputs = test(para, sess, model, data_generator)
+            all_inputs, all_labels, all_outputs = train(para, sess, model, data_generator)
 
-                    return all_inputs, all_labels, all_outputs
+            return all_inputs, all_labels, all_outputs, model
 
-                    # a = d = 10
-                    # b = 10
-                    # c = 10
-                    # model_inputs = tf.convert_to_tensor(all_inputs[:a], dtype=tf.float32)
-                    # model_output = tf.convert_to_tensor(all_outputs[:,0][:b], dtype=tf.float32)
-                    # X = all_inputs[:d]
-                    # model = (model_inputs ,model_output)
-                    # explainer = shap.DeepExplainer(model, all_inputs[:c], sess)
-                    # shap_values = explainer.shap_values(X)
-                    #
-                    # return shap_values
-                else:
-                    test(para, sess, model, data_generator)
+            # all_inputs = all_inputs.permute(0,2,1)
+            #
+            # modelSize = 500
+            # sampleSize = 500
+            #
+            # model_input = [tf.convert_to_tensor(x, dtype=tf.float32) for x in all_inputs[:modelSize]]
+            # model_output = tf.convert_to_tensor(all_outputs[:modelSize], dtype=tf.float32)
+            #
+            # data = [x for x in all_inputs[:sampleSize]]
+            # X = [x for x in all_inputs[:modelSize]]
+            #
+            # model2 = (model_input, model_output)
+            # explainer = shap.DeepExplainer(model2, data, sess)
+            # shap_values = explainer.shap_values(X)
+            #
+            # return shap_values
 
         except KeyboardInterrupt:
             print('KeyboardInterrupt')

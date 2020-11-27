@@ -23,8 +23,7 @@ def main():
                 train(para, sess, model, data_generator)
             elif para.mode == 'test':
                 # saver = tf.train.Saver()
-                # saver.save(sess, "./modelsForVis/traffic.h5")
-                model.saver.save(sess, "./modelsForVis/traffic2/traffic")
+                # saver.save(sess, "./modelsForVis/traffic.h5"
                 # model.save('./modelsForVis/traffic')
                 test(para, sess, model, data_generator)
 
