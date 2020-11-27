@@ -20,7 +20,7 @@ $ ./runTrainAll.sh
 ### Testing
 
 ```
-$ runTestAll.sh
+$ ./runTestAll.sh
 ```
 
 ### File structure
